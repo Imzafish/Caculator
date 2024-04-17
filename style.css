@@ -29,13 +29,13 @@ body{
     transform: translateY(-50%);
 }
 
-.calculator_wrapper h2{
+.calculator h2{
    margin-bottom: 20px;
 }
 
 
 
-.calculator_wrapper button{
+.calculator button{
     height: 70px;
     width: 70px;
     background-color: rgb(4, 0, 255);
@@ -54,7 +54,7 @@ button.multiplay{
 }
 
 
-.button_wrapper{
+.button_spacing{
     margin: auto;
     width: 90%;
     height: 190px;
@@ -64,27 +64,6 @@ button.multiplay{
     flex-direction: column;
     column-count: 3;
 }
-
-#myList{
-    list-style: none;
-    width: 80%;
-    height: 60px;
-    border-radius: 5px;
-    background-color:#222222;
-    color: #ffffff;
-    margin: 15px auto;
-    text-align: left;
-    padding: 10px 20px;
-}
-
-
-
-#myList li{
-    margin: 10px 5px;
-    font-size: 20px;
-}
-
-
 
 
 .calculator input{
