@@ -15,13 +15,13 @@
                 <form action="#" name="datas">
                 <input type="number" name="number1" maxlength = "20" placeholder="First Number" id="num1">
                 <input type="number" name="number2" maxlength = "20" placeholder="Second Number" id="num2">
-                <input type="text" name="text_ans"  max length = "50000" placeholder="Answer" id="text_ans" readonly>
+                <input type="text" name="text_ans"  max length = "50000" placeholder="Answer" id="ans_box" readonly>
                
              <div class="button_spacing">
                 <button type="button" onclick="add(+datas.number1.value , +datas.number2.value)"><i class="fas fa-plus"></i></button>
                 <button type="button" onclick="minus(+datas.number1.value , +datas.number2.value)"><i class="fas fa-minus"></i></button>
-                <button type="button" onclick="multiplication(+datas.number1.value , +datas.number2.value)" class="multiplay" >×</button>
-                <button type="button" onclick="division(+datas.number1.value , +datas.number2.value)" ><i class="fas fa-divide"></i></button>
+                <button type="button" onclick="multiply(+datas.number1.value , +datas.number2.value)" class="multiplay" >×</button>
+                <button type="button" onclick="divide(+datas.number1.value , +datas.number2.value)" ><i class="fas fa-divide"></i></button>
                 <button type="reset" onclick="document.getElementById('myList').innerHTML = '';" class="last_btn" style = "height:170px">C</button>
                 </form>
             </div>
