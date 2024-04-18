@@ -13,16 +13,16 @@
         <div class="calculator">
                <div class="number">
                 <form action="#" name="datas">
-                <input type="number" name="number1" maxlength = "20" placeholder="First Number" id="num1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeydown="if (event.key == 'Enter') {focusnext()}">
-                <input type="number" name="number2" maxlength = "20" placeholder="Second Number" id="num2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeydown="if (event.key == 'Enter') {}">
+                <input type="number" name="number1" maxlength = "20" placeholder="First Number" id="num1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeydown="if (event.key == 'Enter') {focuson('num2')}">
+                <input type="number" name="number2" maxlength = "20" placeholder="Second Number" id="num2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeydown="if (event.key == 'Enter') {focuson('add')}">
                 <input type="text" name="ans_box"  max length = "50000" placeholder="Answer" id="ans_box" readonly>
                
              <div class="button_spacing">
-                <button type="button" onclick="add(+datas.number1.value , +datas.number2.value)"><i class="fas fa-plus"></i></button>
-                <button type="button" onclick="minus(+datas.number1.value , +datas.number2.value)"><i class="fas fa-minus"></i></button>
-                <button type="button" onclick="multiply(+datas.number1.value , +datas.number2.value)" class="multiplay" >×</button>
-                <button type="button" onclick="divide(+datas.number1.value , +datas.number2.value)" ><i class="fas fa-divide"></i></button>
-                <button type="reset" onclick="document.getElementById('myList').innerHTML = '';" class="last_btn" style = "height:170px">C</button>
+                <button id="add" type="button" onclick="add()" onkeydown="handle(this.id, event.key)"><i class="fas fa-plus"></i></button>
+                <button id="sub" type="button" onclick="minus()" onkeydown="handle(this.id, event.key)"><i class="fas fa-minus"></i></button>
+                <button id="mul" type="button" onclick="multiply()" class="multiplay" onkeydown="handle(this.id, event.key)">×</button>
+                <button id="div" type="button" onclick="divide()" onkeydown="handle(this.id, event.key)"><i class="fas fa-divide"></i></button>
+                <button id="clear" type="reset" onclick="clear()" class="last_btn" style="height:170px" onkeydown="handle(this.id, event.key)">C</button>
                 </form>
             </div>
      </div>
