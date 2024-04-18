@@ -13,8 +13,8 @@
         <div class="calculator">
                <div class="number">
                 <form action="#" name="datas">
-                <input type="number" name="number1" maxlength = "20" placeholder="First Number" id="num1">
-                <input type="number" name="number2" maxlength = "20" placeholder="Second Number" id="num2">
+                <input type="number" name="number1" maxlength = "20" placeholder="First Number" id="num1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input type="number" name="number2" maxlength = "20" placeholder="Second Number" id="num2" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                 <input type="text" name="ans_box"  max length = "50000" placeholder="Answer" id="ans_box" readonly>
                
              <div class="button_spacing">
