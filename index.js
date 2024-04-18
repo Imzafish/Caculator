@@ -1,4 +1,8 @@
 //The brains for website
+function focusnext() {
+    document.getElementById("num2").focus();
+}
+
 function add(){
     x = document.getElementById("num1").value;
     y = document.getElementById("num2").value;
