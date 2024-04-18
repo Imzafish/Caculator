@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="7847355.png" />
     <link rel="shortcut icon" href="7847355.png" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
    <div class="container">
@@ -18,10 +17,10 @@
                 <input type="text" name="ans_box"  max length = "50000" placeholder="Answer" id="ans_box" readonly>
                
              <div class="button_spacing">
-                <button id="add" type="button" onclick="add()" onkeydown="handle(this.id, event.key)"><i class="fas fa-plus"></i></button>
-                <button id="sub" type="button" onclick="minus()" onkeydown="handle(this.id, event.key)"><i class="fas fa-minus"></i></button>
-                <button id="mul" type="button" onclick="multiply()" onkeydown="handle(this.id, event.key)" class="multiply">×</button>
-                <button id="div" type="button" onclick="divide()" onkeydown="handle(this.id, event.key)"><i class="fas fa-divide"></i></button>
+                <button id="add" type="button" onclick="add()" onkeydown="handle(this.id, event.key)" class="Symbol">+</button>
+                <button id="sub" type="button" onclick="minus()" onkeydown="handle(this.id, event.key)" class="tinySymbol">-</button>
+                <button id="mul" type="button" onclick="multiply()" onkeydown="handle(this.id, event.key)" class="Symbol">×</button>
+                <button id="div" type="button" onclick="divide()" onkeydown="handle(this.id, event.key)" class="Symbol">÷</button>
                 <button id="clear" type="reset" onclick="clear()" class="last_btn" style="height:170px" onkeydown="handle(this.id, event.key)">C</button>
                 </form>
             </div>
