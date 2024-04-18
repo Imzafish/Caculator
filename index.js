@@ -7,16 +7,16 @@ function add(){
     ans=x+y;
     document.getElementById("ans_box").value = ans;
 }
-function multiply(){
-    x = document.getElementById("num1").value;
-    y = document.getElementById("num2").value;
-    ans=x*y;
-    document.getElementById("ans_box").value = ans;
-}
 function minus(){
     x = document.getElementById("num1").value;
     y = document.getElementById("num2").value;
     ans=x-y;
+    document.getElementById("ans_box").value = ans;
+}
+function multiply(){
+    x = document.getElementById("num1").value;
+    y = document.getElementById("num2").value;
+    ans=x*y;
     document.getElementById("ans_box").value = ans;
 }
 function divide(){
