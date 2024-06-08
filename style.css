@@ -49,8 +49,12 @@ body{
 }
 
 
-button.multiplay{
+button.Symbol{
     font-size: 30px;
+}
+
+button.tinySymbol{ /*Because the - sign is so small we need to make it slightly larger*/
+    font-size: 40px;
 }
 
 
